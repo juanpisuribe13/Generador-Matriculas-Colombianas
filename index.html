@@ -1,0 +1,27 @@
+<html>
+		<div>
+			<title>Generador de Placas Colombianas</title>
+			<script src = "generator.js"></script>
+			<!--back-end stuff-->
+					
+			<center>
+				<h1>Generador de Matriculas Colombianas</h1>
+				<img src="https://matriculasdelmundo.com/gCOL1.php?textCOL1=AAA000&textCOL10=  COLOMBIA" id="img2">
+				<p></p>
+				
+				<p><b><span style="font-size:45px", id='matricula'	>AAA-000</span></b>
+				<p><sup><span style="font-size:20px", id='municipio'	>BOGOTA D.C.</span></sup></p>
+				
+				<button id='generate' onclick="document.getElementById('matricula').innerHTML = getLicenseNumber();document.getElementById('municipio').innerHTML = getMunicipality();;document.getElementById('img2').src = getIMG()">
+				Generar <!--lol-->
+				</button>
+			
+				<p>
+					<strong>Tenga en cuenta que este sitio envia su informacion a <a href="https://matriculasdelmundo.com">Matriculasdelmundo.com</a></strong>. Matriculasdelmundo.com hace posible la generacion de la imagen de la matricula/placa.
+					<p>Si desea saber sobre el tratamiento de sus datos, por favor refierase a <a href="https://matriculasdelmundo.com/privacidad.php">la politica de privacidad de Matriculasdelmundo.com</a></p>
+				</p>
+			</center>
+			
+			<!--front-end stuff-->
+		</div>
+</html>
